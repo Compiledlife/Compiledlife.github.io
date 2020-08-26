@@ -27,9 +27,9 @@
     var mnp = "https://meet.google.com/lookup/eohypg753q?authuser=0&hs=179";
     var dm = "https://meet.google.com/lookup/bml6npkx6q";
     var dv = "https://meet.google.com/lookup/efm5egy7pe";
-    var rest = "rest.html";
-    var elec = "elec.html";
-    var lab = "lab.html";
+    var rest = "https://karthikzee.github.io/rest";
+    var elec = "https://karthikzee.github.io/elec";
+    var lab = "https://karthikzee.github.io/lab";
 
     var ntt = (h>=8)&&(h<10);
     var tte = (h == 10);
@@ -38,14 +38,14 @@
     var tto = (h == 12 && m>=30) || (h == 13 && m<45);
     var ott = (h == 13 && m>=45) || (h == 14 && m<45);
     var ttt = (h == 14 && m>=45) || (h == 15 && m<45);
-    var rest = (h > 15) || (h < 8);
+    var free = (h > 15) || (h < 8);
 
     if(h==12 && m<29)
     {window.location = urla;}
     else if(h==12 && m>29)
     {window.location = urlb;}
 
-	if(d = 3)
+	if(d = 1)
 	{
 		if(ntt)
 			{window.location = mp;}
@@ -61,11 +61,11 @@
 			{window.location = pp;}
 		if(ttt)
 			{window.location = pp;}
-		if(rest)
+		if(free)
 			{window.location = rest;}
 	}
 
-	if(d = 3)
+	if(d = 2)
 	{
 		if(ntt)
 			{window.location = pc;}
@@ -81,7 +81,7 @@
 			{window.location = lab;}
 		if(ttt)
 			{window.location = lab;}
-		if(rest)
+		if(free)
 			{window.location = rest;}
 	}
 	
@@ -101,7 +101,7 @@
 			{window.location = lab;}
 		if(ttt)
 			{window.location = lab;}
-		if(rest)
+		if(free)
 			{window.location = rest;}
 	}
 
@@ -121,7 +121,7 @@
 			{window.location = flat;}
 		if(ttt)
 			{window.location = pc;}
-		if(rest)
+		if(free)
 			{window.location = rest;}
 	}
 
@@ -141,7 +141,7 @@
 			{window.location = dccn;}
 		if(ttt)
 			{window.location = rest;}
-		if(rest)
+		if(free)
 			{window.location = rest;}
 	}
 
@@ -161,7 +161,7 @@
 			{window.location = dbms;}
 		if(ttt)
 			{window.location = rest;}
-		if(rest)
+		if(free)
 			{window.location = rest;}
 	}
 
