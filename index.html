@@ -4,21 +4,64 @@
 
 <head> 
 
-    <title>Redirect url in Javascript</title> 
+    <title>CSE A Google Meet redirect</title> 
 
 </head> 
 
 <body> 
 
 <script> 
+	var date = new Date();
+	var d = date.getDay();
+	var h = date.getHours();
+	var m = date.getMinutes();
 
-    var urla= "https://www.geeksforgeeks.org"; 
-    var urlb= "https://www.pythonprogramming.net";
+    var bme = "https://meet.google.com/kky-tywa-nan"; 
+    var dccn = "https://meet.google.com/lookup/cs6s5mxtoj?authuser=0&hs=179";
+    var cc = "https://meet.google.com/lookup/bljllqex5e?authuser=1&hs=179";
+    var flat = "https://meet.google.com/lookup/ace44dadoy";
+    var mp = "https://meet.google.com/lookup/fdjm6am7dd?authuser=0&hs=179";
+    var pc = "https://meet.google.com/lookup/gbg6hjlabl";
+    var dbms = "https://meet.google.com/lookup/erutjc2q32";
+    var pp = "https://meet.google.com/fbn-mzjs-hbm";
+    var mnp = "https://meet.google.com/lookup/eohypg753q?authuser=0&hs=179";
+    var dm = "https://meet.google.com/lookup/bml6npkx6q";
+    var dv = "https://meet.google.com/lookup/efm5egy7pe";
 
-    if(1>2)
+    var ntt = (h>=8)&&(h<10);
+    var tte = (h == 10);
+    var etef = (h == 11 && m<30);
+    var ett = (h == 11 && m>=30)||(h == 12 && m<30);
+    var tto = (h == 12 && m>=30) || (h == 13 && m<45);
+    var ott = (h == 13 && m>=45) || (h == 14 && m<45);
+    var ttt = (h == 14 && m>=45) || (h == 15 && m<45);
+    var rest = (h > 15) || (h < 8);
+
+    if(h==12 && m<29)
     {window.location = urla;}
-    else
+    else if(h==12 && m>29)
     {window.location = urlb;}
+
+	
+	if(d = 3)
+	{
+		if(ntt)
+			{window.location = dbms;}
+		if(tte)
+			{window.location = mp;}
+		if(etef)
+			{window.location = mnp;}
+		if(ett)
+			{window.location = mnp;}
+		if(tto)
+			{window.location = dbms;}
+		if(ott)
+			{window.location = dbms;}
+		if(ttt)
+			{window.location = dbms;}
+		if(rest)
+			{window.location = cc;}
+	}
 
 </script> 
 
