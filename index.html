@@ -5,17 +5,6 @@
 <head> 
 
     <title>CSE A Google Meet redirect</title>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177089031-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-177089031-1');
-</script>
-
 
 </head> 
 
@@ -27,150 +16,172 @@
 	var h = date.getHours();
 	var m = date.getMinutes();
 
-    var bme = "https://meet.google.com/kky-tywa-nan"; 
-    var dccn = "https://meet.google.com/lookup/cs6s5mxtoj?authuser=0&hs=179";
-    var cc = "https://meet.google.com/lookup/bljllqex5e?authuser=1&hs=179";
-    var flat = "https://meet.google.com/lookup/ace44dadoy";
-    var mp = "https://meet.google.com/lookup/fdjm6am7dd?authuser=0&hs=179";
-    var pc = "https://meet.google.com/lookup/gbg6hjlabl";
-    var dbms = "https://meet.google.com/lookup/dmmk2ejlml?authuser=0&hs=179";
-    var pp = "https://meet.google.com/fbn-mzjs-hbm";
-    var mnp = "https://meet.google.com/lookup/eohypg753q?authuser=0&hs=179";
-    var dm = "https://meet.google.com/lookup/bml6npkx6q";
-    var dv = "https://meet.google.com/lookup/efm5egy7pe";
+    var sg = "https://meet.google.com/lookup/g6ddmr6f3r"; 
+    var ins = "https://meet.google.com/lookup/fr46lmk2mr";
+    var mad = "https://meet.google.com/lookup/ez26lwpho5";
+    var cd = "https://meet.google.com/lookup/dgrybtb7dn";
+    var ai = "https://compiledlife.github.io/home";
+    var pc = "https://meet.google.com/lookup/bwnm6pc6cdS";
+    var pp = "https://meet.google.com/xxh-aayj-ece";
     var rest = "https://compiledlife.github.io/home";
     var elec = "https://compiledlife.github.io/elec";
     var lab = "https://compiledlife.github.io/lab";
 
-    var ntt = (h>=8)&&(h<10);
-    var tte = (h == 10);
-    var etef = (h == 11 && m<30);
-    var ett = (h == 11 && m>=30)||(h == 12 && m<30);
-    var tto = (h == 12 && m>=30) || (h == 13 && m<45);
-    var ott = (h == 13 && m>=45) || (h == 14 && m<45);
-    var ttt = (h == 14 && m>=45) || (h == 15 && m<45);
-    var free = (h >= 15 && m>45) || (h < 8 || h > 15);
+    var first = (h==8)||(h == 9 && m < 30);
+    var second = (h == 9 && m>=30) || (h == 10 && m <=30);
+    var srtBrk = (h == 10 && (m>30 && m<45));
+    var third = (h == 10 && m>=45)||(h == 11 && m<45);
+    var forth = (h == 11 && m>=45) || (h == 12 && m<45);
+	var lnchBrk = (h == 12 && m>=45) || (h == 13 && m<30);
+    var fifth = (h == 13 && m>=30) || (h == 14 && m<30);
+    var sixth = (h == 14 && m>=30) || (h == 15 && m<30);
+	var seventh = (h == 15 && m>=30) || (h == 16 && m<30);
+    var free = (h >= 16 && m>35) || (h < 8 || h > 17);
 
 	if(d == 1)
 	{
-		if(ntt)
-			{window.location = mp;}
-		if(tte)
-			{window.location = dccn;}
-		if(etef)
-			{window.location = bme;}
-		if(ett)
-			{window.location = bme;}
-		if(tto)
-			{window.location = pp;}
-		if(ott)
-			{window.location = pp;}
-		if(ttt)
-			{window.location = pp;}
+		if(first)
+			{window.location = ins;}
+		if(second)
+			{window.location = cd;}
+		if(srtBrk)
+			{window.location = lab;}
+		if(third)
+			{window.location = lab;}
+		if(forth)
+			{window.location = lab;}
+		if(lnchBrk)
+			{window.location = sg;}
+		if(fifth)
+			{window.location = sg;}
+		if(sixth)
+			{window.location = rest;}
+		if(seventh)
+			{window.location = rest;}
 		if(free)
 			{window.location = rest;}
 	}
 
 	if(d == 2)
 	{
-		if(ntt)
-			{window.location = pc;}
-		if(tte)
-			{window.location = dbms;}
-		if(etef)
-			{window.location = bme;}
-		if(ett)
-			{window.location = bme;}
-		if(tto)
-			{window.location = lab;}
-		if(ott)
-			{window.location = lab;}
-		if(ttt)
-			{window.location = lab;}
+		if(first)
+			{window.location = mad;}
+		if(second)
+			{window.location = cd;}
+		if(srtBrk)
+			{window.location = pp;}
+		if(third)
+			{window.location = pp;}
+		if(forth)
+			{window.location = pp;}
+		if(lnchBrk)
+			{window.location = elec;}
+		if(fifth)
+			{window.location = elec;}
+		if(sixth)
+			{window.location = rest;}
+		if(seventh)
+			{window.location = rest;}
 		if(free)
 			{window.location = rest;}
-	}
-	
+	}	
+
 	if(d == 3)
 	{
-		if(ntt)
-			{window.location = dccn;}
-		if(tte)
-			{window.location = mp;}
-		if(etef)
-			{window.location = dbms;}
-		if(ett)
-			{window.location = dbms;}
-		if(tto)
+		if(first)
+			{window.location = cd;}
+		if(second)
+			{window.location = sg;}
+		if(srtBrk)
 			{window.location = lab;}
-		if(ott)
+		if(third)
 			{window.location = lab;}
-		if(ttt)
+		if(forth)
 			{window.location = lab;}
+		if(lnchBrk)
+			{window.location = rest;}
+		if(fifth)
+			{window.location = rest;}
+		if(sixth)
+			{window.location = rest;}
+		if(seventh)
+			{window.location = rest;}
 		if(free)
 			{window.location = rest;}
 	}
 
 	if(d == 4)
 	{
-		if(ntt)
-			{window.location = elec;}
-		if(tte)
-			{window.location = mnp;}
-		if(etef)
-			{window.location = dbms;}
-		if(ett)
-			{window.location = dbms;}
-		if(tto)
-			{window.location = flat;}
-		if(ott)
-			{window.location = flat;}
-		if(ttt)
+		if(first)
+			{window.location = ai;}
+		if(second)
 			{window.location = pc;}
+		if(srtBrk)
+			{window.location = mad;}
+		if(third)
+			{window.location = mad;}
+		if(forth)
+			{window.location = ins;}
+		if(lnchBrk)
+			{window.location = rest;}
+		if(fifth)
+			{window.location = rest;}
+		if(sixth)
+			{window.location = rest;}
+		if(seventh)
+			{window.location = rest;}
 		if(free)
 			{window.location = rest;}
-	}
+	}	
 
 	if(d == 5)
 	{
-		if(ntt)
-			{window.location = dccn;}
-		if(tte)
+		if(first)
 			{window.location = elec;}
-		if(etef)
-			{window.location = flat;}
-		if(ett)
-			{window.location = flat;}
-		if(tto)
-			{window.location = mp;}
-		if(ott)
-			{window.location = mp;}
-		if(ttt)
+		if(second)
+			{window.location = ins;}
+		if(srtBrk)
+			{window.location = ai;}
+		if(third)
+			{window.location = ai;}
+		if(forth)
+			{window.location = rest;}
+		if(lnchBrk)
+			{window.location = rest;}
+		if(fifth)
+			{window.location = rest;}
+		if(sixth)
+			{window.location = rest;}
+		if(seventh)
 			{window.location = rest;}
 		if(free)
 			{window.location = rest;}
 	}
-
+	
 	if(d == 6)
 	{
-		if(ntt)
-			{window.location = bme;}
-		if(tte)
+		if(first)
+			{window.location = ai;}
+		if(second)
 			{window.location = elec;}
-		if(etef)
-			{window.location = flat;}
-		if(ett)
-			{window.location = flat;}
-		if(tto)
-			{window.location = mnp;}
-		if(ott)
-			{window.location = mnp;}
-		if(ttt)
+		if(srtBrk)
+			{window.location = mad;}
+		if(third)
+			{window.location = mad;}
+		if(forth)
+			{window.location = rest;}
+		if(lnchBrk)
+			{window.location = rest;}
+		if(fifth)
+			{window.location = rest;}
+		if(sixth)
+			{window.location = rest;}
+		if(seventh)
 			{window.location = rest;}
 		if(free)
 			{window.location = rest;}
 	}
-
+	
 	if(d == 0)
 	{
 		window.location = rest;
